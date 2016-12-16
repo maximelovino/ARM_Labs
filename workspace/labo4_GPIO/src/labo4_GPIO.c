@@ -1,0 +1,193 @@
+/*
+===============================================================================
+ Name        : labo4_GPIO.c
+ Author      : D. Bechevet, V. Pilloux, A. Lescourt, F. Vannel
+ Copyright   : HES-SO hepia
+ Year        : 2014-2015-2016
+===============================================================================
+ */
+
+
+#include "config_LPC1769.h"
+#include <stdint.h>
+#include <stdbool.h>
+
+// #include "../MyLab_lib/inc/MyLab_GPIO.h"
+
+/* function prototypes */
+extern void exercice1(void);
+void exercice2(void);
+void exercice3(void);
+void exercice4(void);
+void exercice5(void);
+void exercice6(void);
+void printValOnLed(uint8_t n);
+void LedSetState (uint8_t led, bool state);
+void Led8SetState (uint8_t value);
+bool JoystickGetState (uint8_t pos);
+uint8_t SwitchGetState (void);
+void delai(uint16_t delai);
+
+uint8_t val = 0;
+
+/* global variables */
+uint8_t exo;		// change this variable with the exercise number you want to test
+bool increment = 0;
+int ledON = 0;
+/***********************************
+ * function     : init
+ * arguments    : none
+ * return value : none
+ *   initialisation de la carte MyLab
+ ***********************************/
+void init(void)
+{
+	FIO2DIR = 0xFF;
+	FIO1DIR = 0x0000;
+}
+
+void delai(uint16_t delai){
+	int valueFor1000 = 1e5;
+	int i;
+	for (i = 0; i < (delai/1000)*valueFor1000; ++i);
+}
+
+void LedSetState (uint8_t led, bool state){
+	FIO2DIR = 0xff;
+	FIO2MASK = !(1<<led);
+	FIO2PIN = state<<led;
+}
+
+bool JoystickGetState (uint8_t pos){
+	return !((FIO1PIN>>(19+pos)) & 1);
+}
+
+uint8_t SwitchGetState (void){
+	FIO2DIR = 0x00;
+	return (uint8_t) FIO2PIN;
+}
+
+/***********************************
+ * function     : exercice2
+ * arguments    : none
+ * return value : none
+ *   AFFICHAGE CLIGNOTANT
+ ***********************************/
+void exercice2(void)
+{
+	int i;
+	FIO2CLR = 0xff;
+	FIO2SET = 0x01;
+	for (i = 0; i < 1000000; ++i) {	}
+	FIO2CLR = 0x01;
+	FIO2SET = 0x80;
+	for (i = 0; i < 1000000; ++i) {	}
+}
+
+void Led8SetState (uint8_t value){
+	FIO2DIR = 0xff;
+	FIO2CLR = 0xff;
+	FIO2SET = value;
+}
+
+/***********************************
+ * function     : exercice3
+ * arguments    : none
+ * return value : none
+ *   COMPTEUR 8 BITS A DEUX VITESSES
+ ***********************************/
+void exercice3(void)
+{
+	int i;
+	int pinValue = (FIO1PIN >> 19) & 1;
+
+	if (!pinValue) {
+		for (i = 0; i < 1e4; ++i) {}
+	}else{
+		for (i = 0; i < 1e5; ++i) {}
+	}
+	val++;
+	Led8SetState(val);
+}
+
+
+
+/***********************************
+ * function     : exercice4
+ * arguments    : none
+ * return value : none
+ *   COMPTEUR 8 BITS MANUEL
+ ***********************************/
+void exercice4(void)
+{
+	int pinValue = (FIO1PIN >> 19) & 1;
+
+	if (pinValue){
+		increment = !increment ? increment : !increment;
+	}
+	if (!pinValue && !increment) {
+		val++;
+		increment = !increment;
+	}
+	Led8SetState(val);
+}
+
+/***********************************
+ * function     : exercice5
+ * arguments    : none
+ * return value : none
+ *   CHENILLARD
+ ***********************************/
+void exercice5(void)
+{
+	uint8_t i = 1;
+	for (;;) {
+		Led8SetState(i);
+		delai(1000);
+		if (SwitchGetState() & 0x1 == 1) {
+			i *= 2;
+			if (i == 0) i = 1;
+		}else{
+			i /= 2;
+			if(i == 0) (i = 1 << 7);
+		}
+	}
+}
+
+/***********************************
+ * function     : exercice6
+ * arguments    : none
+ * return value : none
+ *   CHENILLARD REBONDISSANT
+ ***********************************/
+void exercice6(void)
+{
+	Led8SetState(SwitchGetState());
+	//TODO do this
+}
+
+/***********************************
+ * function     : main
+ * arguments    : none
+ * return value : none
+ * Startup function
+ ***********************************/
+int main(void) {
+
+	exo = 5;    // change this number with the exercise number you want to test
+
+	init();
+
+	while (true)
+	{
+		switch(exo){					// select the function corresponding to the exercise to test
+		case 1 : exercice1(); break;
+		case 2 : exercice2(); break;
+		case 3 : exercice3(); break;
+		case 4 : exercice4(); break;
+		case 5 : exercice5(); break;
+		case 6 : exercice6(); break;
+		}
+
+	}
+}

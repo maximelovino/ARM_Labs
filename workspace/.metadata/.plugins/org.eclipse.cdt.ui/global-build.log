@@ -1,0 +1,145 @@
+14:25:44 **** Clean-only build of configuration Debug for project CMSIS_CORE_LPC17xx ****
+make -r clean 
+rm -rf  ./src/system_LPC17xx.o  ./src/system_LPC17xx.d  libCMSIS_CORE_LPC17xx.a
+ 
+14:25:44 **** Clean-only build of configuration Debug for project MyLab_lib ****
+make -r clean 
+rm -rf  ./src/GPIO.o ./src/cr_startup_lpc175x_6x.o ./src/lcd.o  ./src/GPIO.d ./src/cr_startup_lpc175x_6x.d ./src/lcd.d  libMyLab_lib.a
+ 
+14:25:44 **** Clean-only build of configuration Debug for project labo5_Interruptions_GPIO-TIMER ****
+make -r clean 
+rm -rf  ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/labo5_Interruption.o  ./src/cr_startup_lpc175x_6x.d ./src/crp.d ./src/labo5_Interruption.d  labo5_Interruptions_GPIO-TIMER.axf
+ 
+14:25:52 **** Build of configuration Debug for project CMSIS_CORE_LPC17xx ****
+make -r all 
+Building file: ../src/system_LPC17xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSIS_CORE_LPC17xx -I"Z:\PROC\workspace\CMSIS_CORE_LPC17xx\inc" -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/system_LPC17xx.d" -MT"src/system_LPC17xx.o" -MT"src/system_LPC17xx.d" -o "src/system_LPC17xx.o" "../src/system_LPC17xx.c"
+Finished building: ../src/system_LPC17xx.c
+ 
+Building target: libCMSIS_CORE_LPC17xx.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r  "libCMSIS_CORE_LPC17xx.a"  ./src/system_LPC17xx.o   
+c:\nxp\LPCXpresso_8.0.0_526\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating libCMSIS_CORE_LPC17xx.a
+Finished building target: libCMSIS_CORE_LPC17xx.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "libCMSIS_CORE_LPC17xx.a" ; # arm-none-eabi-objdump -h -S "libCMSIS_CORE_LPC17xx.a" >"libCMSIS_CORE_LPC17xx.lss"
+   text	   data	    bss	    dec	    hex	filename
+    396	      4	      0	    400	    190	system_LPC17xx.o (ex libCMSIS_CORE_LPC17xx.a)
+ 
+14:25:52 **** Build of configuration Debug for project MyLab_lib ****
+make -r all 
+Building file: ../src/GPIO.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__USE_CMSIS_DSPLIB=CMSIS_DSPLIB_CM3 -D__LPC17XX__ -I"Z:\PROC\workspace\MyLab_lib\inc" -I"Z:\PROC\workspace\CMSIS_CORE_LPC17xx\inc" -I"Z:\PROC\workspace\MyLab_lib\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -MT"src/GPIO.d" -o "src/GPIO.o" "../src/GPIO.c"
+Finished building: ../src/GPIO.c
+ 
+Building file: ../src/cr_startup_lpc175x_6x.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__USE_CMSIS_DSPLIB=CMSIS_DSPLIB_CM3 -D__LPC17XX__ -I"Z:\PROC\workspace\MyLab_lib\inc" -I"Z:\PROC\workspace\CMSIS_CORE_LPC17xx\inc" -I"Z:\PROC\workspace\MyLab_lib\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/cr_startup_lpc175x_6x.d" -MT"src/cr_startup_lpc175x_6x.o" -MT"src/cr_startup_lpc175x_6x.d" -o "src/cr_startup_lpc175x_6x.o" "../src/cr_startup_lpc175x_6x.c"
+Finished building: ../src/cr_startup_lpc175x_6x.c
+ 
+Building file: ../src/lcd.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__USE_CMSIS_DSPLIB=CMSIS_DSPLIB_CM3 -D__LPC17XX__ -I"Z:\PROC\workspace\MyLab_lib\inc" -I"Z:\PROC\workspace\CMSIS_CORE_LPC17xx\inc" -I"Z:\PROC\workspace\MyLab_lib\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/lcd.d" -MT"src/lcd.o" -MT"src/lcd.d" -o "src/lcd.o" "../src/lcd.c"
+../src/lcd.c: In function 'Display_read':
+../src/lcd.c:187:20: warning: variable 'val' set but not used [-Wunused-but-set-variable]
+     static uint8_t val[512];
+                    ^
+Finished building: ../src/lcd.c
+ 
+Building target: libMyLab_lib.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r  "libMyLab_lib.a"  ./src/GPIO.o ./src/cr_startup_lpc175x_6x.o ./src/lcd.o   
+c:\nxp\LPCXpresso_8.0.0_526\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating libMyLab_lib.a
+Finished building target: libMyLab_lib.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "libMyLab_lib.a" ; # arm-none-eabi-objdump -h -S "libMyLab_lib.a" >"libMyLab_lib.lss"
+   text	   data	    bss	    dec	    hex	filename
+    408	      0	      0	    408	    198	GPIO.o (ex libMyLab_lib.a)
+    528	      0	      0	    528	    210	cr_startup_lpc175x_6x.o (ex libMyLab_lib.a)
+   1416	      1	    512	   1929	    789	lcd.o (ex libMyLab_lib.a)
+ 
+14:25:57 **** Build of configuration Debug for project labo5_Interruptions_GPIO-TIMER ****
+make -r all 
+Building file: ../src/cr_startup_lpc175x_6x.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -D__REDLIB__ -I"Z:\PROC\workspace\CMSIS_CORE_LPC17xx\inc" -I"Z:\PROC\workspace\MyLab_lib\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/cr_startup_lpc175x_6x.d" -MT"src/cr_startup_lpc175x_6x.o" -MT"src/cr_startup_lpc175x_6x.d" -o "src/cr_startup_lpc175x_6x.o" "../src/cr_startup_lpc175x_6x.c"
+Finished building: ../src/cr_startup_lpc175x_6x.c
+ 
+Building file: ../src/crp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -D__REDLIB__ -I"Z:\PROC\workspace\CMSIS_CORE_LPC17xx\inc" -I"Z:\PROC\workspace\MyLab_lib\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/crp.d" -MT"src/crp.o" -MT"src/crp.d" -o "src/crp.o" "../src/crp.c"
+Finished building: ../src/crp.c
+ 
+Building file: ../src/labo5_Interruption.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -D__REDLIB__ -I"Z:\PROC\workspace\CMSIS_CORE_LPC17xx\inc" -I"Z:\PROC\workspace\MyLab_lib\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/labo5_Interruption.d" -MT"src/labo5_Interruption.o" -MT"src/labo5_Interruption.d" -o "src/labo5_Interruption.o" "../src/labo5_Interruption.c"
+Finished building: ../src/labo5_Interruption.c
+ 
+Building target: labo5_Interruptions_GPIO-TIMER.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"Z:\PROC\workspace\MyLab_lib\Debug" -L"Z:\PROC\workspace\CMSIS_CORE_LPC17xx\Debug" -Xlinker -Map="labo5_Interruptions_GPIO-TIMER.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "labo5_Interruptions_GPIO-TIMER_Debug.ld" -o "labo5_Interruptions_GPIO-TIMER.axf"  ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/labo5_Interruption.o   -lMyLab_lib -lCMSIS_CORE_LPC17xx
+Finished building target: labo5_Interruptions_GPIO-TIMER.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "labo5_Interruptions_GPIO-TIMER.axf"; # arm-none-eabi-objcopy -v -O binary "labo5_Interruptions_GPIO-TIMER.axf" "labo5_Interruptions_GPIO-TIMER.bin" ; # checksum -p LPC1769 -d "labo5_Interruptions_GPIO-TIMER.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1856	     12	     12	   1880	    758	labo5_Interruptions_GPIO-TIMER.axf
+ 
+14:26:01 **** Incremental Build of configuration Debug for project labo5_Interruptions_GPIO-TIMER ****
+make -r all 
+make: Nothing to be done for `all'.
+14:26:22 **** Incremental Build of configuration Debug for project CMSIS_CORE_LPC17xx ****
+make -r all 
+make: Nothing to be done for `all'.
+14:26:23 **** Incremental Build of configuration Debug for project MyLab_lib ****
+make -r all 
+make: Nothing to be done for `all'.
+14:26:26 **** Incremental Build of configuration Debug for project labo5_Interruptions_GPIO-TIMER ****
+make -r all 
+make: Nothing to be done for `all'.
+14:26:30 **** Incremental Build of configuration Debug for project labo5_Interruptions_GPIO-TIMER ****
+make -r all 
+make: Nothing to be done for `all'.
+14:40:08 **** Incremental Build of configuration Debug for project labo5_Interruptions_GPIO-TIMER ****
+make -r all 
+Building file: ../src/labo5_Interruption.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -D__REDLIB__ -I"Z:\PROC\workspace\CMSIS_CORE_LPC17xx\inc" -I"Z:\PROC\workspace\MyLab_lib\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/labo5_Interruption.d" -MT"src/labo5_Interruption.o" -MT"src/labo5_Interruption.d" -o "src/labo5_Interruption.o" "../src/labo5_Interruption.c"
+Finished building: ../src/labo5_Interruption.c
+ 
+Building target: labo5_Interruptions_GPIO-TIMER.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"Z:\PROC\workspace\MyLab_lib\Debug" -L"Z:\PROC\workspace\CMSIS_CORE_LPC17xx\Debug" -Xlinker -Map="labo5_Interruptions_GPIO-TIMER.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "labo5_Interruptions_GPIO-TIMER_Debug.ld" -o "labo5_Interruptions_GPIO-TIMER.axf"  ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/labo5_Interruption.o   -lMyLab_lib -lCMSIS_CORE_LPC17xx
+Finished building target: labo5_Interruptions_GPIO-TIMER.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "labo5_Interruptions_GPIO-TIMER.axf"; # arm-none-eabi-objcopy -v -O binary "labo5_Interruptions_GPIO-TIMER.axf" "labo5_Interruptions_GPIO-TIMER.bin" ; # checksum -p LPC1769 -d "labo5_Interruptions_GPIO-TIMER.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1912	     12	     12	   1936	    790	labo5_Interruptions_GPIO-TIMER.axf
+ 
+14:42:13 **** Incremental Build of configuration Debug for project labo5_Interruptions_GPIO-TIMER ****
+make -r all 
+Building file: ../src/labo5_Interruption.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -D__REDLIB__ -I"Z:\PROC\workspace\CMSIS_CORE_LPC17xx\inc" -I"Z:\PROC\workspace\MyLab_lib\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/labo5_Interruption.d" -MT"src/labo5_Interruption.o" -MT"src/labo5_Interruption.d" -o "src/labo5_Interruption.o" "../src/labo5_Interruption.c"
+Finished building: ../src/labo5_Interruption.c
+ 
+Building target: labo5_Interruptions_GPIO-TIMER.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"Z:\PROC\workspace\MyLab_lib\Debug" -L"Z:\PROC\workspace\CMSIS_CORE_LPC17xx\Debug" -Xlinker -Map="labo5_Interruptions_GPIO-TIMER.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "labo5_Interruptions_GPIO-TIMER_Debug.ld" -o "labo5_Interruptions_GPIO-TIMER.axf"  ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/labo5_Interruption.o   -lMyLab_lib -lCMSIS_CORE_LPC17xx
+Finished building target: labo5_Interruptions_GPIO-TIMER.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "labo5_Interruptions_GPIO-TIMER.axf"; # arm-none-eabi-objcopy -v -O binary "labo5_Interruptions_GPIO-TIMER.axf" "labo5_Interruptions_GPIO-TIMER.bin" ; # checksum -p LPC1769 -d "labo5_Interruptions_GPIO-TIMER.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1928	     12	     12	   1952	    7a0	labo5_Interruptions_GPIO-TIMER.axf
+ 

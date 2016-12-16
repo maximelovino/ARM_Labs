@@ -1,0 +1,21 @@
+13:02:42 **** Incremental Build of configuration Debug for project labotest1_iti_jour_B ****
+make -r all 
+Building file: ../src/assembleur.s
+Invoking: MCU Assembler
+arm-none-eabi-gcc -c -x assembler-with-cpp -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -D__REDLIB__ -I"Z:\PROC\workspace\CMSIS_CORE_LPC17xx\inc" -g3 -mcpu=cortex-m3 -mthumb -specs=redlib.specs -o "src/assembleur.o" "../src/assembleur.s"
+Finished building: ../src/assembleur.s
+ 
+Building target: labotest1_iti_jour_B.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"Z:\PROC\workspace\CMSIS_CORE_LPC17xx\Debug" -Xlinker -Map="labotest1_iti_jour_B.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "labotest1_iti_jour_B_Debug.ld" -o "labotest1_iti_jour_B.axf"  ./src/assembleur.o ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/labotest1_iti_jour_B.o   -lCMSIS_CORE_LPC17xx
+Finished building target: labotest1_iti_jour_B.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "labotest1_iti_jour_B.axf"; # arm-none-eabi-objcopy -v -O binary "labotest1_iti_jour_B.axf" "labotest1_iti_jour_B.bin" ; # checksum -p LPC1769 -d "labotest1_iti_jour_B.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1328	      0	      0	   1328	    530	labotest1_iti_jour_B.axf
+ 
+
+13:02:43 Build Finished (took 780ms)
+

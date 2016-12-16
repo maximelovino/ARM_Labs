@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="Z:\PROC\labTest\labotest1_iti_jour_b.zip"/>
+			<item value="Z:\PROC\4\Labo4_GPIO_2016.zip"/>
+			<item value="Z:\PROC\3\labo3_ASM_2016.zip"/>
+			<item value="Z:\PROC\2\Labo2_ASM_2015.zip"/>
+		</list>
+	</section>
+	<section name="com.crt.quickstart.views.wizards.examples.QSExampleSelectionPage">
+		<item value="Z:\PROC\labTest" key="dirname"/>
+	</section>
+</section>

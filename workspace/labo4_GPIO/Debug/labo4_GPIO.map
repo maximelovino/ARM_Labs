@@ -1,0 +1,428 @@
+Archive member included because of file (symbol)
+
+c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(__weak__main.o)
+                              ./src/cr_startup_lpc175x_6x.o (__main)
+c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+                              ./src/labo4_GPIO.o (__aeabi_i2d)
+
+Allocating common symbols
+Common symbol       size              file
+
+exo                 0x1               ./src/labo4_GPIO.o
+
+Discarded input sections
+
+ .data          0x00000000        0x0 ./src/assembleur.o
+ .bss           0x00000000        0x0 ./src/assembleur.o
+ .group         0x00000000        0x8 ./src/cr_startup_lpc175x_6x.o
+ .text          0x00000000        0x0 ./src/cr_startup_lpc175x_6x.o
+ .data          0x00000000        0x0 ./src/cr_startup_lpc175x_6x.o
+ .bss           0x00000000        0x0 ./src/cr_startup_lpc175x_6x.o
+ .group         0x00000000        0x8 ./src/crp.o
+ .group         0x00000000        0x8 ./src/crp.o
+ .text          0x00000000        0x0 ./src/crp.o
+ .data          0x00000000        0x0 ./src/crp.o
+ .bss           0x00000000        0x0 ./src/crp.o
+ .group         0x00000000        0x8 ./src/labo4_GPIO.o
+ .group         0x00000000        0x8 ./src/labo4_GPIO.o
+ .group         0x00000000        0x8 ./src/labo4_GPIO.o
+ .group         0x00000000        0x8 ./src/labo4_GPIO.o
+ .group         0x00000000        0x8 ./src/labo4_GPIO.o
+ .group         0x00000000        0x8 ./src/labo4_GPIO.o
+ .text          0x00000000        0x0 ./src/labo4_GPIO.o
+ .data          0x00000000        0x0 ./src/labo4_GPIO.o
+ .bss           0x00000000        0x0 ./src/labo4_GPIO.o
+ .bss.ledON     0x00000000        0x4 ./src/labo4_GPIO.o
+ .text.LedSetState
+                0x00000000       0x50 ./src/labo4_GPIO.o
+ .text.JoystickGetState
+                0x00000000       0x34 ./src/labo4_GPIO.o
+ .debug_macro   0x00000000      0x87a ./src/labo4_GPIO.o
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(__weak__main.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(__weak__main.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(__weak__main.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_dmul
+                0x00000000      0x120 c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_ddiv
+                0x00000000      0x150 c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_dsub
+                0x00000000      0x1d8 c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_dadd
+                0x00000000      0x134 c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_drsub
+                0x00000000       0x14 c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_dneg
+                0x00000000        0x8 c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_d2f
+                0x00000000       0x5c c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_d2iz
+                0x00000000       0x40 c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_d2uiz
+                0x00000000       0x34 c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_d2lz
+                0x00000000       0x70 c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_d2ulz
+                0x00000000       0x5c c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+ .text.__bhs_ul2d
+                0x00000000       0x94 c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_ui2d
+                0x00000000        0x8 c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_l2d
+                0x00000000       0x2c c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_ul2d
+                0x00000000        0x8 c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_dcmpeq
+                0x00000000       0x2c c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_dcmpgt
+                0x00000000       0x5c c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_dcmple
+                0x00000000       0x5c c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_dcmpge
+                0x00000000       0x5c c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_dcmpun
+                0x00000000       0x1c c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_cdcmple
+                0x00000000       0x30 c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+ .text.__aeabi_cdrcmple
+                0x00000000       0x14 c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+MFlash512        0x00000000         0x00080000         xr
+RamLoc32         0x10000000         0x00008000         xrw
+RamAHB32         0x2007c000         0x00008000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./src/assembleur.o
+LOAD ./src/cr_startup_lpc175x_6x.o
+LOAD ./src/crp.o
+LOAD ./src/labo4_GPIO.o
+LOAD Z:\PROC\workspace\MyLab_lib\Debug\libMyLab_lib.a
+START GROUP
+LOAD c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a
+LOAD c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a
+END GROUP
+                0x00000000                __base_MFlash512 = 0x0
+                0x00000000                __base_Flash = 0x0
+                0x00080000                __top_MFlash512 = 0x80000
+                0x00080000                __top_Flash = 0x80000
+                0x10000000                __base_RamLoc32 = 0x10000000
+                0x10000000                __base_RAM = 0x10000000
+                0x10008000                __top_RamLoc32 = 0x10008000
+                0x10008000                __top_RAM = 0x10008000
+                0x2007c000                __base_RamAHB32 = 0x2007c000
+                0x2007c000                __base_RAM2 = 0x2007c000
+                0x20084000                __top_RamAHB32 = 0x20084000
+                0x20084000                __top_RAM2 = 0x20084000
+
+.text           0x00000000      0x730
+ FILL mask 0xff
+                0x00000000                __vectors_start__ = ABSOLUTE (.)
+ *(.isr_vector)
+ .isr_vector    0x00000000       0xcc ./src/cr_startup_lpc175x_6x.o
+                0x00000000                g_pfnVectors
+                0x000000cc                . = ALIGN (0x4)
+                0x000000cc                __section_table_start = .
+                0x000000cc                __data_section_table = .
+                0x000000cc        0x4 LONG 0x730 LOADADDR (.data)
+                0x000000d0        0x4 LONG 0x10000000 ADDR (.data)
+                0x000000d4        0x4 LONG 0x0 SIZEOF (.data)
+                0x000000d8        0x4 LONG 0x730 LOADADDR (.data_RAM2)
+                0x000000dc        0x4 LONG 0x2007c000 ADDR (.data_RAM2)
+                0x000000e0        0x4 LONG 0x0 SIZEOF (.data_RAM2)
+                0x000000e4                __data_section_table_end = .
+                0x000000e4                __bss_section_table = .
+                0x000000e4        0x4 LONG 0x10000000 ADDR (.bss)
+                0x000000e8        0x4 LONG 0x4 SIZEOF (.bss)
+                0x000000ec        0x4 LONG 0x2007c000 ADDR (.bss_RAM2)
+                0x000000f0        0x4 LONG 0x0 SIZEOF (.bss_RAM2)
+                0x000000f4                __bss_section_table_end = .
+                0x000000f4                __section_table_end = .
+ *(.after_vectors*)
+ .after_vectors
+                0x000000f4       0x7c ./src/cr_startup_lpc175x_6x.o
+                0x000000f4                NMI_Handler
+                0x000000f6                HardFault_Handler
+                0x000000f8                MemManage_Handler
+                0x000000fa                BusFault_Handler
+                0x000000fc                UsageFault_Handler
+                0x000000fe                SVC_Handler
+                0x00000100                DebugMon_Handler
+                0x00000102                PendSV_Handler
+                0x00000104                SysTick_Handler
+                0x00000106                PWM1_IRQHandler
+                0x00000106                I2C1_IRQHandler
+                0x00000106                EINT2_IRQHandler
+                0x00000106                UART1_IRQHandler
+                0x00000106                EINT3_IRQHandler
+                0x00000106                CANActivity_IRQHandler
+                0x00000106                TIMER3_IRQHandler
+                0x00000106                UART0_IRQHandler
+                0x00000106                MCPWM_IRQHandler
+                0x00000106                I2C0_IRQHandler
+                0x00000106                IntDefaultHandler
+                0x00000106                RIT_IRQHandler
+                0x00000106                CAN_IRQHandler
+                0x00000106                PLL1_IRQHandler
+                0x00000106                SSP0_IRQHandler
+                0x00000106                I2S_IRQHandler
+                0x00000106                I2C2_IRQHandler
+                0x00000106                RTC_IRQHandler
+                0x00000106                TIMER0_IRQHandler
+                0x00000106                SPI_IRQHandler
+                0x00000106                UART3_IRQHandler
+                0x00000106                EINT1_IRQHandler
+                0x00000106                TIMER1_IRQHandler
+                0x00000106                UART2_IRQHandler
+                0x00000106                ADC_IRQHandler
+                0x00000106                SSP1_IRQHandler
+                0x00000106                USB_IRQHandler
+                0x00000106                BOD_IRQHandler
+                0x00000106                USBActivity_IRQHandler
+                0x00000106                WDT_IRQHandler
+                0x00000106                PLL0_IRQHandler
+                0x00000106                QEI_IRQHandler
+                0x00000106                EINT0_IRQHandler
+                0x00000106                TIMER2_IRQHandler
+                0x00000106                DMA_IRQHandler
+                0x00000106                ENET_IRQHandler
+                0x00000108                data_init
+                0x0000011e                bss_init
+                0x00000130                ResetISR
+                0x000002fc                . = 0x2fc
+ *fill*         0x00000170      0x18c ff
+                0x000002fc                PROVIDE (__CRP_WORD_START__, .)
+ *(.crp)
+ .crp           0x000002fc        0x4 ./src/crp.o
+                0x000002fc                CRP_WORD
+                0x00000300                PROVIDE (__CRP_WORD_END__, .)
+                0x00000001                ASSERT (! ((__CRP_WORD_START__ == __CRP_WORD_END__)), Linker CRP Enabled, but no CRP_WORD provided within application)
+ *(.text*)
+ .text          0x00000300       0x38 ./src/assembleur.o
+                0x00000300                exercice1
+ .text.init     0x00000338       0x20 ./src/labo4_GPIO.o
+                0x00000338                init
+ .text.delai    0x00000358       0x48 ./src/labo4_GPIO.o
+                0x00000358                delai
+ .text.SwitchGetState
+                0x000003a0       0x24 ./src/labo4_GPIO.o
+                0x000003a0                SwitchGetState
+ .text.exercice2
+                0x000003c4       0x5c ./src/labo4_GPIO.o
+                0x000003c4                exercice2
+ .text.Led8SetState
+                0x00000420       0x34 ./src/labo4_GPIO.o
+                0x00000420                Led8SetState
+ *fill*         0x00000454        0x4 
+ .text.exercice3
+                0x00000458       0xa8 ./src/labo4_GPIO.o
+                0x00000458                exercice3
+ .text.exercice4
+                0x00000500       0xb0 ./src/labo4_GPIO.o
+                0x00000500                exercice4
+ .text.exercice5
+                0x000005b0       0x4c ./src/labo4_GPIO.o
+                0x000005b0                exercice5
+ .text.exercice6
+                0x000005fc       0x14 ./src/labo4_GPIO.o
+                0x000005fc                exercice6
+ .text.main     0x00000610       0x64 ./src/labo4_GPIO.o
+                0x00000610                main
+ .text.__weak_main
+                0x00000674        0x4 c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(__weak__main.o)
+                0x00000674                __weak_main
+                0x00000674                __main
+ .text.__bhs_ui2d
+                0x00000678       0x48 c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+                0x00000678                __bhs_ui2d
+ .text.__aeabi_i2d
+                0x000006c0       0x14 c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+                0x000006c0                __aeabi_i2d
+ .text.__aeabi_dcmplt
+                0x000006d4       0x5c c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+                0x000006d4                __aeabi_dcmplt
+ *(.rodata .rodata.* .constdata .constdata.*)
+                0x00000730                . = ALIGN (0x4)
+
+.glue_7         0x00000730        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x00000730        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x00000730        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x00000730        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x00000730        0x0
+ .iplt          0x00000000        0x0 ./src/assembleur.o
+
+.rel.dyn        0x00000730        0x0
+ .rel.iplt      0x00000000        0x0 ./src/assembleur.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x00000730                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00000730                __exidx_end = .
+                0x00000730                _etext = .
+
+.data_RAM2      0x2007c000        0x0 load address 0x00000730
+ FILL mask 0xff
+                0x2007c000                PROVIDE (__start_data_RAM2, .)
+ *(.ramfunc.$RAM2)
+ *(.ramfunc.$RamAHB32)
+ *(.data.$RAM2*)
+ *(.data.$RamAHB32*)
+                0x2007c000                . = ALIGN (0x4)
+                0x2007c000                PROVIDE (__end_data_RAM2, .)
+
+.uninit_RESERVED
+                0x10000000        0x0
+ *(.bss.$RESERVED*)
+                0x10000000                . = ALIGN (0x4)
+                0x10000000                _end_uninit_RESERVED = .
+
+.data           0x10000000        0x0 load address 0x00000730
+ FILL mask 0xff
+                0x10000000                _data = .
+ *(vtable)
+ *(.ramfunc*)
+ *(.data*)
+                0x10000000                . = ALIGN (0x4)
+                0x10000000                _edata = .
+
+.igot.plt       0x10000000        0x0 load address 0x00000730
+ .igot.plt      0x00000000        0x0 ./src/assembleur.o
+
+.bss_RAM2       0x2007c000        0x0
+                0x2007c000                PROVIDE (__start_bss_RAM2, .)
+ *(.bss.$RAM2*)
+ *(.bss.$RamAHB32*)
+                0x2007c000                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x2007c000                PROVIDE (__end_bss_RAM2, .)
+
+.bss            0x10000000        0x4
+                0x10000000                _bss = .
+ *(.bss*)
+ .bss.val       0x10000000        0x1 ./src/labo4_GPIO.o
+                0x10000000                val
+ .bss.increment
+                0x10000001        0x1 ./src/labo4_GPIO.o
+                0x10000001                increment
+ *(COMMON)
+ COMMON         0x10000002        0x1 ./src/labo4_GPIO.o
+                0x10000002                exo
+                0x10000004                . = ALIGN (0x4)
+ *fill*         0x10000003        0x1 
+                0x10000004                _ebss = .
+                0x10000004                PROVIDE (end, .)
+
+.noinit_RAM2    0x2007c000        0x0
+ *(.noinit.$RAM2*)
+ *(.noinit.$RamAHB32*)
+                0x2007c000                . = ALIGN (0x4)
+
+.noinit         0x10000004        0x0
+                0x10000004                _noinit = .
+ *(.noinit*)
+                0x10000004                . = ALIGN (0x4)
+                0x10000004                _end_noinit = .
+                0x10000004                PROVIDE (_pvHeapStart, DEFINED (__user_heap_base)?__user_heap_base:.)
+                0x10008000                PROVIDE (_vStackTop, DEFINED (__user_stack_top)?__user_stack_top:(__top_RamLoc32 - 0x0))
+                0xefff79f2                PROVIDE (__valid_user_code_checksum, (0x0 - ((((((_vStackTop + (ResetISR + 0x1)) + (NMI_Handler + 0x1)) + (HardFault_Handler + 0x1)) + (DEFINED (MemManage_Handler)?MemManage_Handler:0x0 + 0x1)) + (DEFINED (BusFault_Handler)?BusFault_Handler:0x0 + 0x1)) + (DEFINED (UsageFault_Handler)?UsageFault_Handler:0x0 + 0x1))))
+OUTPUT(labo4_GPIO.axf elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x2f
+ .ARM.attributes
+                0x00000000       0x21 ./src/assembleur.o
+ .ARM.attributes
+                0x00000021       0x33 ./src/cr_startup_lpc175x_6x.o
+ .ARM.attributes
+                0x00000054       0x33 ./src/crp.o
+ .ARM.attributes
+                0x00000087       0x33 ./src/labo4_GPIO.o
+ .ARM.attributes
+                0x000000ba       0x33 c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(__weak__main.o)
+ .ARM.attributes
+                0x000000ed       0x33 c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+
+.comment        0x00000000       0xe0
+ .comment       0x00000000       0x70 ./src/cr_startup_lpc175x_6x.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 ./src/crp.o
+ .comment       0x00000000       0x71 ./src/labo4_GPIO.o
+ .comment       0x00000070       0x70 c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(__weak__main.o)
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libcr_eabihelpers.a(double.o)
+
+.debug_line     0x00000000      0x402
+ .debug_line    0x00000000       0x57 ./src/assembleur.o
+ .debug_line    0x00000057       0xbf ./src/cr_startup_lpc175x_6x.o
+ .debug_line    0x00000116       0x78 ./src/crp.o
+ .debug_line    0x0000018e      0x274 ./src/labo4_GPIO.o
+
+.debug_info     0x00000000      0x589
+ .debug_info    0x00000000       0x5f ./src/assembleur.o
+ .debug_info    0x0000005f      0x26f ./src/cr_startup_lpc175x_6x.o
+ .debug_info    0x000002ce       0x3f ./src/crp.o
+ .debug_info    0x0000030d      0x27c ./src/labo4_GPIO.o
+
+.debug_abbrev   0x00000000      0x2b6
+ .debug_abbrev  0x00000000       0x14 ./src/assembleur.o
+ .debug_abbrev  0x00000014      0x120 ./src/cr_startup_lpc175x_6x.o
+ .debug_abbrev  0x00000134       0x36 ./src/crp.o
+ .debug_abbrev  0x0000016a      0x14c ./src/labo4_GPIO.o
+
+.debug_aranges  0x00000000      0x130
+ .debug_aranges
+                0x00000000       0x20 ./src/assembleur.o
+ .debug_aranges
+                0x00000020       0x80 ./src/cr_startup_lpc175x_6x.o
+ .debug_aranges
+                0x000000a0       0x18 ./src/crp.o
+ .debug_aranges
+                0x000000b8       0x78 ./src/labo4_GPIO.o
+
+.debug_loc      0x00000000      0x1be
+ .debug_loc     0x00000000      0x1be ./src/cr_startup_lpc175x_6x.o
+
+.debug_ranges   0x00000000       0xd8
+ .debug_ranges  0x00000000       0x70 ./src/cr_startup_lpc175x_6x.o
+ .debug_ranges  0x00000070       0x68 ./src/labo4_GPIO.o
+
+.debug_macro    0x00000000     0x1964
+ .debug_macro   0x00000000       0x1d ./src/cr_startup_lpc175x_6x.o
+ .debug_macro   0x0000001d      0x880 ./src/cr_startup_lpc175x_6x.o
+ .debug_macro   0x0000089d       0x1a ./src/crp.o
+ .debug_macro   0x000008b7      0x87a ./src/crp.o
+ .debug_macro   0x00001131       0x34 ./src/crp.o
+ .debug_macro   0x00001165       0x4e ./src/labo4_GPIO.o
+ .debug_macro   0x000011b3       0xa0 ./src/labo4_GPIO.o
+ .debug_macro   0x00001253       0x10 ./src/labo4_GPIO.o
+ .debug_macro   0x00001263      0x12d ./src/labo4_GPIO.o
+ .debug_macro   0x00001390      0x5b2 ./src/labo4_GPIO.o
+ .debug_macro   0x00001942       0x22 ./src/labo4_GPIO.o
+
+.debug_str      0x00000000     0x445b
+ .debug_str     0x00000000     0x2625 ./src/cr_startup_lpc175x_6x.o
+                               0x2638 (size before relaxing)
+ .debug_str     0x00002625      0x1a6 ./src/crp.o
+                               0x2536 (size before relaxing)
+ .debug_str     0x000027cb     0x1c90 ./src/labo4_GPIO.o
+                               0x4159 (size before relaxing)
+
+.debug_frame    0x00000000      0x2a8
+ .debug_frame   0x00000000       0xf0 ./src/cr_startup_lpc175x_6x.o
+ .debug_frame   0x000000f0      0x1b8 ./src/labo4_GPIO.o
