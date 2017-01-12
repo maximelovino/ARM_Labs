@@ -23,10 +23,10 @@
 
 // TODO: insert other definitions and declarations here
 uint8_t tabRGB[97];
-void buildRGB(uint32_t r, uint32_t g,uint32_t b);
-void ledSet(uint32_t r, uint32_t g,uint32_t b);
+void buildRGB(uint8_t r, uint8_t g,uint8_t b);
+void ledSet(uint8_t r, uint8_t g,uint8_t b);
 
-void ledSet(uint32_t r, uint32_t g,uint32_t b){
+void ledSet(uint8_t r, uint8_t g,uint8_t b){
 	buildRGB(r,g,b);
 	LPC_SC->PCLKSEL0 = 1 << 2;
 	//mode compteur
@@ -54,15 +54,28 @@ void ledSet(uint32_t r, uint32_t g,uint32_t b){
 	LPC_SC->DMAREQSEL = 1;
 
 	LPC_GPDMACH0->DMACCConfig = (001<<11) + (8 << 6) + 1;
+
 }
 
-void buildRGB(uint32_t r, uint32_t g,uint32_t b){
+void buildRGB(uint8_t r, uint8_t g,uint8_t b){
 	tabRGB[0] = ~0;
 	int i;
-	for (i = 1; i < 33; ++i) {
-		tabRGB[i] = ~((r & (1 << i)) >> i);
-		tabRGB[i+32] = ~((g & (1 << i)) >> i);
-		tabRGB[i+64] = ~((b & (1 << i)) >> i);
+
+	for (i = 1; i <= 32; i++) {
+		tabRGB[(i-1)*4+1] = ~1;
+		tabRGB[(i-1)*4+1+1] = ~((g & (1 << i)) >> i);
+		tabRGB[(i-1)*4+1+2] = ~0;
+		tabRGB[(i-1)*4+1+3] = ~0;
+
+		tabRGB[32+(i-1)*4+1] = ~1;
+		tabRGB[32+(i-1)*4+1+1] = ~((r & (1 << i)) >> i);
+		tabRGB[32+(i-1)*4+1+2] = ~0;
+		tabRGB[32+(i-1)*4+1+3] = ~0;
+
+		tabRGB[64+(i-1)*4+1] = ~1;
+		tabRGB[64+(i-1)*4+1+1] = ~((b & (1 << i)) >> i);
+		tabRGB[64+(i-1)*4+1+2] = ~0;
+		tabRGB[64+(i-1)*4+1+3] = ~0;
 	}
 
 	//code 1 1100
@@ -77,8 +90,9 @@ int main(void) {
     // Force the counter to be placed into memory
     volatile static int i = 0 ;
     // Enter an infinite loop, just incrementing a counter
+
     while(1) {
-    	ledSet(255,0,255);
+    	ledSet(240,240,240);
     }
     return 0 ;
 }

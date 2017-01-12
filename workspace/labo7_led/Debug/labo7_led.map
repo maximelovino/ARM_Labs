@@ -113,7 +113,7 @@ END GROUP
                 0x0000000020084000                __top_RamAHB32 = 0x20084000
                 0x0000000020084000                __top_RAM2 = 0x20084000
 
-.text           0x0000000000000000      0x548
+.text           0x0000000000000000      0x5d0
  FILL mask 0xff
                 0x0000000000000000                __vectors_start__ = ABSOLUTE (.)
  *(.isr_vector)
@@ -122,10 +122,10 @@ END GROUP
                 0x00000000000000cc                . = ALIGN (0x4)
                 0x00000000000000cc                __section_table_start = .
                 0x00000000000000cc                __data_section_table = .
-                0x00000000000000cc        0x4 LONG 0x548 LOADADDR (.data)
+                0x00000000000000cc        0x4 LONG 0x5d0 LOADADDR (.data)
                 0x00000000000000d0        0x4 LONG 0x10000000 ADDR (.data)
                 0x00000000000000d4        0x4 LONG 0x0 SIZEOF (.data)
-                0x00000000000000d8        0x4 LONG 0x548 LOADADDR (.data_RAM2)
+                0x00000000000000d8        0x4 LONG 0x5d0 LOADADDR (.data_RAM2)
                 0x00000000000000dc        0x4 LONG 0x2007c000 ADDR (.data_RAM2)
                 0x00000000000000e0        0x4 LONG 0x0 SIZEOF (.data_RAM2)
                 0x00000000000000e4                __data_section_table_end = .
@@ -196,51 +196,51 @@ END GROUP
                 0x0000000000000300                PROVIDE (__CRP_WORD_END__, .)
                 0x0000000000000001                ASSERT (! ((__CRP_WORD_START__ == __CRP_WORD_END__)), Linker CRP Enabled, but no CRP_WORD provided within application)
  *(.text*)
- .text.ledSet   0x0000000000000300       0xb8 ./src/labo7_led.o
+ .text.ledSet   0x0000000000000300       0xc0 ./src/labo7_led.o
                 0x0000000000000300                ledSet
  .text.buildRGB
-                0x00000000000003b8       0x9c ./src/labo7_led.o
-                0x00000000000003b8                buildRGB
- .text.main     0x0000000000000454       0x10 ./src/labo7_led.o
-                0x0000000000000454                main
+                0x00000000000003c0      0x11c ./src/labo7_led.o
+                0x00000000000003c0                buildRGB
+ .text.main     0x00000000000004dc       0x10 ./src/labo7_led.o
+                0x00000000000004dc                main
  .text.SystemInit
-                0x0000000000000464       0xe0 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
-                0x0000000000000464                SystemInit
+                0x00000000000004ec       0xe0 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+                0x00000000000004ec                SystemInit
  .text.__weak_main
-                0x0000000000000544        0x4 /Applications/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
-                0x0000000000000544                __main
-                0x0000000000000544                __weak_main
+                0x00000000000005cc        0x4 /Applications/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+                0x00000000000005cc                __main
+                0x00000000000005cc                __weak_main
  *(.rodata .rodata.* .constdata .constdata.*)
-                0x0000000000000548                . = ALIGN (0x4)
+                0x00000000000005d0                . = ALIGN (0x4)
 
-.glue_7         0x0000000000000548        0x0
- .glue_7        0x0000000000000548        0x0 linker stubs
+.glue_7         0x00000000000005d0        0x0
+ .glue_7        0x00000000000005d0        0x0 linker stubs
 
-.glue_7t        0x0000000000000548        0x0
- .glue_7t       0x0000000000000548        0x0 linker stubs
+.glue_7t        0x00000000000005d0        0x0
+ .glue_7t       0x00000000000005d0        0x0 linker stubs
 
-.vfp11_veneer   0x0000000000000548        0x0
- .vfp11_veneer  0x0000000000000548        0x0 linker stubs
+.vfp11_veneer   0x00000000000005d0        0x0
+ .vfp11_veneer  0x00000000000005d0        0x0 linker stubs
 
-.v4_bx          0x0000000000000548        0x0
- .v4_bx         0x0000000000000548        0x0 linker stubs
+.v4_bx          0x00000000000005d0        0x0
+ .v4_bx         0x00000000000005d0        0x0 linker stubs
 
-.iplt           0x0000000000000548        0x0
- .iplt          0x0000000000000548        0x0 ./src/cr_startup_lpc175x_6x.o
+.iplt           0x00000000000005d0        0x0
+ .iplt          0x00000000000005d0        0x0 ./src/cr_startup_lpc175x_6x.o
 
-.rel.dyn        0x0000000000000548        0x0
- .rel.iplt      0x0000000000000548        0x0 ./src/cr_startup_lpc175x_6x.o
+.rel.dyn        0x00000000000005d0        0x0
+ .rel.iplt      0x00000000000005d0        0x0 ./src/cr_startup_lpc175x_6x.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000000000548                __exidx_start = .
+                0x00000000000005d0                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x0000000000000548                __exidx_end = .
-                0x0000000000000548                _etext = .
+                0x00000000000005d0                __exidx_end = .
+                0x00000000000005d0                _etext = .
 
-.data_RAM2      0x000000002007c000        0x0 load address 0x0000000000000548
+.data_RAM2      0x000000002007c000        0x0 load address 0x00000000000005d0
  FILL mask 0xff
                 [!provide]                        PROVIDE (__start_data_RAM2, .)
  *(.ramfunc.$RAM2)
@@ -256,7 +256,7 @@ END GROUP
                 0x0000000010000000                . = ALIGN (0x4)
                 0x0000000010000000                _end_uninit_RESERVED = .
 
-.data           0x0000000010000000        0x0 load address 0x0000000000000548
+.data           0x0000000010000000        0x0 load address 0x00000000000005d0
  FILL mask 0xff
                 0x0000000010000000                _data = .
  *(vtable)
@@ -265,7 +265,7 @@ END GROUP
                 0x0000000010000000                . = ALIGN (0x4)
                 0x0000000010000000                _edata = .
 
-.igot.plt       0x0000000010000000        0x0 load address 0x0000000000000548
+.igot.plt       0x0000000010000000        0x0 load address 0x00000000000005d0
  .igot.plt      0x0000000010000000        0x0 ./src/cr_startup_lpc175x_6x.o
 
 .bss_RAM2       0x000000002007c000        0x0
@@ -348,11 +348,11 @@ OUTPUT(labo7_led.axf elf32-littlearm)
  .debug_macro   0x00000000000022f2      0x12d /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
  .debug_macro   0x000000000000241f      0x87a /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
 
-.debug_line     0x0000000000000000      0x627
+.debug_line     0x0000000000000000      0x65b
  .debug_line    0x0000000000000000       0xd5 ./src/cr_startup_lpc175x_6x.o
  .debug_line    0x00000000000000d5       0x7f ./src/crp.o
- .debug_line    0x0000000000000154      0x2db ./src/labo7_led.o
- .debug_line    0x000000000000042f      0x1f8 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+ .debug_line    0x0000000000000154      0x30f ./src/labo7_led.o
+ .debug_line    0x0000000000000463      0x1f8 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
 
 .debug_str      0x0000000000000000     0xbc4d
  .debug_str     0x0000000000000000     0x26c7 ./src/cr_startup_lpc175x_6x.o

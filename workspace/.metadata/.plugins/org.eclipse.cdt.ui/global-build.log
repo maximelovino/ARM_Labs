@@ -1079,3 +1079,327 @@ arm-none-eabi-size "labo7_led.axf"; # arm-none-eabi-objcopy -v -O binary "labo7_
 15:47:48 **** Incremental Build of configuration Debug for project labo7_led ****
 make -r all 
 make: Nothing to be done for `all'.
+16:03:16 **** Incremental Build of configuration Debug for project CMSIS_CORE_LPC17xx ****
+make -r all 
+src/system_LPC17xx.d:1: *** multiple target patterns.  Stop.
+16:03:17 **** Incremental Build of configuration Debug for project labo7_led ****
+make -r all 
+Building file: ../src/labo7_led.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -D__REDLIB__ -I"/Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/labo7_led.d" -MT"src/labo7_led.o" -MT"src/labo7_led.d" -o "src/labo7_led.o" "../src/labo7_led.c"
+../src/labo7_led.c: In function 'ledSet':
+../src/labo7_led.c:43:29: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  LPC_GPDMACH0->DMACCSrcAddr = tabRGB;
+                             ^
+../src/labo7_led.c: In function 'main':
+../src/labo7_led.c:90:25: warning: unused variable 'i' [-Wunused-variable]
+     volatile static int i = 0 ;
+                         ^
+Finished building: ../src/labo7_led.c
+ 
+Building target: labo7_led.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug" -Xlinker -Map="labo7_led.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "labo7_led_Debug.ld" -o "labo7_led.axf"  ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/labo7_led.o   -lCMSIS_CORE_LPC17xx
+Memory region         Used Size  Region Size  %age Used
+       MFlash512:        1488 B       512 KB      0.28%
+        RamLoc32:         100 B        32 KB      0.31%
+        RamAHB32:          0 GB        32 KB      0.00%
+Finished building target: labo7_led.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "labo7_led.axf"; # arm-none-eabi-objcopy -v -O binary "labo7_led.axf" "labo7_led.bin" ; # checksum -p LPC1769 -d "labo7_led.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1488	      0	    100	   1588	    634	labo7_led.axf
+ 
+16:03:28 **** Incremental Build of configuration Debug for project labo7_led ****
+make -r all 
+make: Nothing to be done for `all'.
+16:04:48 **** Incremental Build of configuration Debug for project CMSIS_CORE_LPC17xx ****
+make -r all 
+src/system_LPC17xx.d:1: *** multiple target patterns.  Stop.
+16:04:48 **** Incremental Build of configuration Debug for project labo7_led ****
+make -r all 
+Building file: ../src/labo7_led.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -D__REDLIB__ -I"/Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/labo7_led.d" -MT"src/labo7_led.o" -MT"src/labo7_led.d" -o "src/labo7_led.o" "../src/labo7_led.c"
+../src/labo7_led.c: In function 'ledSet':
+../src/labo7_led.c:43:29: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  LPC_GPDMACH0->DMACCSrcAddr = tabRGB;
+                             ^
+../src/labo7_led.c: In function 'main':
+../src/labo7_led.c:91:25: warning: unused variable 'i' [-Wunused-variable]
+     volatile static int i = 0 ;
+                         ^
+Finished building: ../src/labo7_led.c
+ 
+Building target: labo7_led.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug" -Xlinker -Map="labo7_led.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "labo7_led_Debug.ld" -o "labo7_led.axf"  ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/labo7_led.o   -lCMSIS_CORE_LPC17xx
+Memory region         Used Size  Region Size  %age Used
+       MFlash512:        1488 B       512 KB      0.28%
+        RamLoc32:         100 B        32 KB      0.31%
+        RamAHB32:          0 GB        32 KB      0.00%
+Finished building target: labo7_led.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "labo7_led.axf"; # arm-none-eabi-objcopy -v -O binary "labo7_led.axf" "labo7_led.bin" ; # checksum -p LPC1769 -d "labo7_led.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1488	      0	    100	   1588	    634	labo7_led.axf
+ 
+16:04:59 **** Incremental Build of configuration Debug for project labo7_led ****
+make -r all 
+make: Nothing to be done for `all'.
+16:05:48 **** Incremental Build of configuration Debug for project CMSIS_CORE_LPC17xx ****
+make -r all 
+src/system_LPC17xx.d:1: *** multiple target patterns.  Stop.
+16:05:49 **** Incremental Build of configuration Debug for project labo7_led ****
+make -r all 
+Building file: ../src/labo7_led.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -D__REDLIB__ -I"/Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/labo7_led.d" -MT"src/labo7_led.o" -MT"src/labo7_led.d" -o "src/labo7_led.o" "../src/labo7_led.c"
+../src/labo7_led.c: In function 'ledSet':
+../src/labo7_led.c:43:29: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  LPC_GPDMACH0->DMACCSrcAddr = tabRGB;
+                             ^
+../src/labo7_led.c: In function 'main':
+../src/labo7_led.c:91:25: warning: unused variable 'i' [-Wunused-variable]
+     volatile static int i = 0 ;
+                         ^
+Finished building: ../src/labo7_led.c
+ 
+Building target: labo7_led.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug" -Xlinker -Map="labo7_led.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "labo7_led_Debug.ld" -o "labo7_led.axf"  ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/labo7_led.o   -lCMSIS_CORE_LPC17xx
+Memory region         Used Size  Region Size  %age Used
+       MFlash512:        1488 B       512 KB      0.28%
+        RamLoc32:         100 B        32 KB      0.31%
+        RamAHB32:          0 GB        32 KB      0.00%
+Finished building target: labo7_led.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "labo7_led.axf"; # arm-none-eabi-objcopy -v -O binary "labo7_led.axf" "labo7_led.bin" ; # checksum -p LPC1769 -d "labo7_led.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1488	      0	    100	   1588	    634	labo7_led.axf
+ 
+16:06:00 **** Incremental Build of configuration Debug for project labo7_led ****
+make -r all 
+make: Nothing to be done for `all'.
+16:06:49 **** Incremental Build of configuration Debug for project CMSIS_CORE_LPC17xx ****
+make -r all 
+src/system_LPC17xx.d:1: *** multiple target patterns.  Stop.
+16:06:49 **** Incremental Build of configuration Debug for project labo7_led ****
+make -r all 
+Building file: ../src/labo7_led.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -D__REDLIB__ -I"/Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/labo7_led.d" -MT"src/labo7_led.o" -MT"src/labo7_led.d" -o "src/labo7_led.o" "../src/labo7_led.c"
+../src/labo7_led.c: In function 'ledSet':
+../src/labo7_led.c:43:29: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  LPC_GPDMACH0->DMACCSrcAddr = tabRGB;
+                             ^
+../src/labo7_led.c: In function 'main':
+../src/labo7_led.c:91:25: warning: unused variable 'i' [-Wunused-variable]
+     volatile static int i = 0 ;
+                         ^
+Finished building: ../src/labo7_led.c
+ 
+Building target: labo7_led.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug" -Xlinker -Map="labo7_led.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "labo7_led_Debug.ld" -o "labo7_led.axf"  ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/labo7_led.o   -lCMSIS_CORE_LPC17xx
+Memory region         Used Size  Region Size  %age Used
+       MFlash512:        1488 B       512 KB      0.28%
+        RamLoc32:         100 B        32 KB      0.31%
+        RamAHB32:          0 GB        32 KB      0.00%
+Finished building target: labo7_led.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "labo7_led.axf"; # arm-none-eabi-objcopy -v -O binary "labo7_led.axf" "labo7_led.bin" ; # checksum -p LPC1769 -d "labo7_led.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1488	      0	    100	   1588	    634	labo7_led.axf
+ 
+16:07:01 **** Incremental Build of configuration Debug for project labo7_led ****
+make -r all 
+make: Nothing to be done for `all'.
+16:07:36 **** Incremental Build of configuration Debug for project CMSIS_CORE_LPC17xx ****
+make -r all 
+src/system_LPC17xx.d:1: *** multiple target patterns.  Stop.
+16:07:37 **** Incremental Build of configuration Debug for project labo7_led ****
+make -r all 
+Building file: ../src/labo7_led.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -D__REDLIB__ -I"/Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/labo7_led.d" -MT"src/labo7_led.o" -MT"src/labo7_led.d" -o "src/labo7_led.o" "../src/labo7_led.c"
+../src/labo7_led.c: In function 'ledSet':
+../src/labo7_led.c:43:29: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  LPC_GPDMACH0->DMACCSrcAddr = tabRGB;
+                             ^
+../src/labo7_led.c: In function 'main':
+../src/labo7_led.c:91:25: warning: unused variable 'i' [-Wunused-variable]
+     volatile static int i = 0 ;
+                         ^
+Finished building: ../src/labo7_led.c
+ 
+Building target: labo7_led.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug" -Xlinker -Map="labo7_led.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "labo7_led_Debug.ld" -o "labo7_led.axf"  ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/labo7_led.o   -lCMSIS_CORE_LPC17xx
+Memory region         Used Size  Region Size  %age Used
+       MFlash512:        1488 B       512 KB      0.28%
+        RamLoc32:         100 B        32 KB      0.31%
+        RamAHB32:          0 GB        32 KB      0.00%
+Finished building target: labo7_led.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "labo7_led.axf"; # arm-none-eabi-objcopy -v -O binary "labo7_led.axf" "labo7_led.bin" ; # checksum -p LPC1769 -d "labo7_led.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1488	      0	    100	   1588	    634	labo7_led.axf
+ 
+16:07:49 **** Incremental Build of configuration Debug for project labo7_led ****
+make -r all 
+make: Nothing to be done for `all'.
+16:08:25 **** Incremental Build of configuration Debug for project CMSIS_CORE_LPC17xx ****
+make -r all 
+src/system_LPC17xx.d:1: *** multiple target patterns.  Stop.
+16:08:25 **** Incremental Build of configuration Debug for project labo7_led ****
+make -r all 
+Building file: ../src/labo7_led.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -D__REDLIB__ -I"/Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/labo7_led.d" -MT"src/labo7_led.o" -MT"src/labo7_led.d" -o "src/labo7_led.o" "../src/labo7_led.c"
+../src/labo7_led.c: In function 'ledSet':
+../src/labo7_led.c:43:29: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  LPC_GPDMACH0->DMACCSrcAddr = tabRGB;
+                             ^
+../src/labo7_led.c: In function 'main':
+../src/labo7_led.c:91:25: warning: unused variable 'i' [-Wunused-variable]
+     volatile static int i = 0 ;
+                         ^
+Finished building: ../src/labo7_led.c
+ 
+Building target: labo7_led.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug" -Xlinker -Map="labo7_led.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "labo7_led_Debug.ld" -o "labo7_led.axf"  ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/labo7_led.o   -lCMSIS_CORE_LPC17xx
+Memory region         Used Size  Region Size  %age Used
+       MFlash512:        1488 B       512 KB      0.28%
+        RamLoc32:         100 B        32 KB      0.31%
+        RamAHB32:          0 GB        32 KB      0.00%
+Finished building target: labo7_led.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "labo7_led.axf"; # arm-none-eabi-objcopy -v -O binary "labo7_led.axf" "labo7_led.bin" ; # checksum -p LPC1769 -d "labo7_led.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1488	      0	    100	   1588	    634	labo7_led.axf
+ 
+16:08:37 **** Incremental Build of configuration Debug for project labo7_led ****
+make -r all 
+make: Nothing to be done for `all'.
+16:09:18 **** Incremental Build of configuration Debug for project CMSIS_CORE_LPC17xx ****
+make -r all 
+src/system_LPC17xx.d:1: *** multiple target patterns.  Stop.
+16:09:18 **** Incremental Build of configuration Debug for project labo7_led ****
+make -r all 
+make: Nothing to be done for `all'.
+16:09:29 **** Incremental Build of configuration Debug for project labo7_led ****
+make -r all 
+make: Nothing to be done for `all'.
+16:10:13 **** Incremental Build of configuration Debug for project CMSIS_CORE_LPC17xx ****
+make -r all 
+src/system_LPC17xx.d:1: *** multiple target patterns.  Stop.
+16:10:13 **** Incremental Build of configuration Debug for project labo7_led ****
+make -r all 
+make: Nothing to be done for `all'.
+16:10:25 **** Incremental Build of configuration Debug for project labo7_led ****
+make -r all 
+make: Nothing to be done for `all'.
+16:11:37 **** Incremental Build of configuration Debug for project CMSIS_CORE_LPC17xx ****
+make -r all 
+src/system_LPC17xx.d:1: *** multiple target patterns.  Stop.
+16:11:37 **** Incremental Build of configuration Debug for project labo7_led ****
+make -r all 
+make: Nothing to be done for `all'.
+16:11:48 **** Incremental Build of configuration Debug for project labo7_led ****
+make -r all 
+make: Nothing to be done for `all'.
+16:12:34 **** Incremental Build of configuration Debug for project CMSIS_CORE_LPC17xx ****
+make -r all 
+src/system_LPC17xx.d:1: *** multiple target patterns.  Stop.
+16:12:34 **** Incremental Build of configuration Debug for project labo7_led ****
+make -r all 
+Building file: ../src/labo7_led.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -D__REDLIB__ -I"/Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/labo7_led.d" -MT"src/labo7_led.o" -MT"src/labo7_led.d" -o "src/labo7_led.o" "../src/labo7_led.c"
+../src/labo7_led.c: In function 'ledSet':
+../src/labo7_led.c:43:29: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  LPC_GPDMACH0->DMACCSrcAddr = tabRGB;
+                             ^
+../src/labo7_led.c: In function 'main':
+../src/labo7_led.c:91:25: warning: unused variable 'i' [-Wunused-variable]
+     volatile static int i = 0 ;
+                         ^
+Finished building: ../src/labo7_led.c
+ 
+Building target: labo7_led.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug" -Xlinker -Map="labo7_led.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "labo7_led_Debug.ld" -o "labo7_led.axf"  ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/labo7_led.o   -lCMSIS_CORE_LPC17xx
+Memory region         Used Size  Region Size  %age Used
+       MFlash512:        1488 B       512 KB      0.28%
+        RamLoc32:         100 B        32 KB      0.31%
+        RamAHB32:          0 GB        32 KB      0.00%
+Finished building target: labo7_led.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "labo7_led.axf"; # arm-none-eabi-objcopy -v -O binary "labo7_led.axf" "labo7_led.bin" ; # checksum -p LPC1769 -d "labo7_led.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1488	      0	    100	   1588	    634	labo7_led.axf
+ 
+16:12:46 **** Incremental Build of configuration Debug for project labo7_led ****
+make -r all 
+make: Nothing to be done for `all'.
+16:13:35 **** Incremental Build of configuration Debug for project CMSIS_CORE_LPC17xx ****
+make -r all 
+src/system_LPC17xx.d:1: *** multiple target patterns.  Stop.
+16:13:35 **** Incremental Build of configuration Debug for project labo7_led ****
+make -r all 
+make: Nothing to be done for `all'.
+16:13:46 **** Incremental Build of configuration Debug for project labo7_led ****
+make -r all 
+make: Nothing to be done for `all'.
+16:14:09 **** Incremental Build of configuration Debug for project CMSIS_CORE_LPC17xx ****
+make -r all 
+src/system_LPC17xx.d:1: *** multiple target patterns.  Stop.
+16:14:09 **** Incremental Build of configuration Debug for project labo7_led ****
+make -r all 
+Building file: ../src/labo7_led.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -D__REDLIB__ -I"/Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/labo7_led.d" -MT"src/labo7_led.o" -MT"src/labo7_led.d" -o "src/labo7_led.o" "../src/labo7_led.c"
+../src/labo7_led.c: In function 'ledSet':
+../src/labo7_led.c:43:29: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  LPC_GPDMACH0->DMACCSrcAddr = tabRGB;
+                             ^
+../src/labo7_led.c: In function 'main':
+../src/labo7_led.c:91:25: warning: unused variable 'i' [-Wunused-variable]
+     volatile static int i = 0 ;
+                         ^
+Finished building: ../src/labo7_led.c
+ 
+Building target: labo7_led.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug" -Xlinker -Map="labo7_led.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "labo7_led_Debug.ld" -o "labo7_led.axf"  ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/labo7_led.o   -lCMSIS_CORE_LPC17xx
+Memory region         Used Size  Region Size  %age Used
+       MFlash512:        1488 B       512 KB      0.28%
+        RamLoc32:         100 B        32 KB      0.31%
+        RamAHB32:          0 GB        32 KB      0.00%
+Finished building target: labo7_led.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "labo7_led.axf"; # arm-none-eabi-objcopy -v -O binary "labo7_led.axf" "labo7_led.bin" ; # checksum -p LPC1769 -d "labo7_led.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1488	      0	    100	   1588	    634	labo7_led.axf
+ 
+16:14:21 **** Incremental Build of configuration Debug for project labo7_led ****
+make -r all 
+make: Nothing to be done for `all'.
