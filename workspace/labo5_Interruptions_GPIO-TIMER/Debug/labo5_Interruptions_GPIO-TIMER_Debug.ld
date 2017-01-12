@@ -1,11 +1,11 @@
 /*
  * GENERATED FILE - DO NOT EDIT
  * (c) Code Red Technologies Ltd, 2008-2013
- * (c) NXP Semiconductors 2013-2016
+ * (c) NXP Semiconductors 2013-2017
  * Generated linker script file for LPC1769
  * Created from linkscript.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.23
- * LPCXpresso v8.0.0 [Build 526] [2015-11-23]  on 15 déc. 2016 14:42:11
+ * LPCXpresso v8.2.2 [Build 650] [2016-09-09]  on Jan 12, 2017 1:16:58 PM
  */
 
 INCLUDE "labo5_Interruptions_GPIO-TIMER_Debug_library.ld"
@@ -28,28 +28,17 @@ SECTIONS
         LONG(LOADADDR(.data));
         LONG(    ADDR(.data));
         LONG(  SIZEOF(.data));
-        LONG(LOADADDR(.data_RAM2));
-        LONG(    ADDR(.data_RAM2));
-        LONG(  SIZEOF(.data_RAM2));
         __data_section_table_end = .;
         __bss_section_table = .;
         LONG(    ADDR(.bss));
         LONG(  SIZEOF(.bss));
-        LONG(    ADDR(.bss_RAM2));
-        LONG(  SIZEOF(.bss_RAM2));
         __bss_section_table_end = .;
         __section_table_end = . ;
 	    /* End of Global Section Table */
 
         *(.after_vectors*)
 
-        /* Code Read Protect data */
-        . = 0x000002FC ;
-        PROVIDE(__CRP_WORD_START__ = .) ;
-        KEEP(*(.crp))
-        PROVIDE(__CRP_WORD_END__ = .) ;
-        ASSERT(!(__CRP_WORD_START__ == __CRP_WORD_END__), "Linker CRP Enabled, but no CRP_WORD provided within application");
-        /* End of Code Read Protect */
+        /* CRP data not supported with this license */
     } >MFlash512
 
     .text : ALIGN(4)    
@@ -76,19 +65,6 @@ SECTIONS
 
     _etext = .;
         
-    /* DATA section for RamAHB32 */
-    .data_RAM2 : ALIGN(4)
-    {
-        FILL(0xff)
-        PROVIDE(__start_data_RAM2 = .) ;
-        *(.ramfunc.$RAM2)
-        *(.ramfunc.$RamAHB32)
-        *(.data.$RAM2*)
-        *(.data.$RamAHB32*)
-        . = ALIGN(4) ;
-        PROVIDE(__end_data_RAM2 = .) ;
-     } > RamAHB32 AT>MFlash512
-
     /* MAIN DATA SECTION */
     .uninit_RESERVED : ALIGN(4)
     {
@@ -107,15 +83,6 @@ SECTIONS
        . = ALIGN(4) ;
        _edata = . ;
     } > RamLoc32 AT>MFlash512
-    /* BSS section for RamAHB32 */
-    .bss_RAM2 : ALIGN(4)
-    {
-       PROVIDE(__start_bss_RAM2 = .) ;
-       *(.bss.$RAM2*)
-       *(.bss.$RamAHB32*)
-       . = ALIGN (. != 0 ? 4 : 1) ; /* avoid empty segment */
-       PROVIDE(__end_bss_RAM2 = .) ;
-    } > RamAHB32 
     /* MAIN BSS SECTION */
     .bss : ALIGN(4)
     {
@@ -126,13 +93,6 @@ SECTIONS
         _ebss = .;
         PROVIDE(end = .);
     } > RamLoc32
-    /* NOINIT section for RamAHB32 */
-    .noinit_RAM2 (NOLOAD) : ALIGN(4)
-    {
-       *(.noinit.$RAM2*)
-       *(.noinit.$RamAHB32*)
-       . = ALIGN(4) ;
-    } > RamAHB32 
     /* DEFAULT NOINIT SECTION */
     .noinit (NOLOAD): ALIGN(4)
     {

@@ -1,0 +1,393 @@
+Archive member included to satisfy reference by file (symbol)
+
+/Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+                              ./src/cr_startup_lpc175x_6x.o (SystemInit)
+/Applications/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+                              ./src/cr_startup_lpc175x_6x.o (__main)
+/Applications/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/libcr_eabihelpers.a(division_64.o)
+                              /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o) (__aeabi_uldivmod)
+/Applications/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/libcr_eabihelpers.a(division_idiv0.o)
+                              /Applications/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/libcr_eabihelpers.a(division_64.o) (__aeabi_idiv0)
+
+Discarded input sections
+
+ .group         0x0000000000000000        0x8 ./src/cr_startup_lpc175x_6x.o
+ .text          0x0000000000000000        0x0 ./src/cr_startup_lpc175x_6x.o
+ .data          0x0000000000000000        0x0 ./src/cr_startup_lpc175x_6x.o
+ .bss           0x0000000000000000        0x0 ./src/cr_startup_lpc175x_6x.o
+ .group         0x0000000000000000        0x8 ./src/crp.o
+ .group         0x0000000000000000        0x8 ./src/crp.o
+ .text          0x0000000000000000        0x0 ./src/crp.o
+ .data          0x0000000000000000        0x0 ./src/crp.o
+ .bss           0x0000000000000000        0x0 ./src/crp.o
+ .debug_macro   0x0000000000000000      0x88c ./src/crp.o
+ .group         0x0000000000000000        0x8 ./src/labo7_led.o
+ .group         0x0000000000000000        0x8 ./src/labo7_led.o
+ .group         0x0000000000000000        0x8 ./src/labo7_led.o
+ .group         0x0000000000000000        0x8 ./src/labo7_led.o
+ .group         0x0000000000000000        0x8 ./src/labo7_led.o
+ .group         0x0000000000000000        0x8 ./src/labo7_led.o
+ .group         0x0000000000000000        0x8 ./src/labo7_led.o
+ .group         0x0000000000000000        0x8 ./src/labo7_led.o
+ .group         0x0000000000000000        0x8 ./src/labo7_led.o
+ .group         0x0000000000000000        0x8 ./src/labo7_led.o
+ .group         0x0000000000000000        0x8 ./src/labo7_led.o
+ .group         0x0000000000000000        0x8 ./src/labo7_led.o
+ .text          0x0000000000000000        0x0 ./src/labo7_led.o
+ .data          0x0000000000000000        0x0 ./src/labo7_led.o
+ .bss           0x0000000000000000        0x0 ./src/labo7_led.o
+ .bss.i.5074    0x0000000000000000        0x4 ./src/labo7_led.o
+ .debug_macro   0x0000000000000000      0x88c ./src/labo7_led.o
+ .group         0x0000000000000000        0x8 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+ .group         0x0000000000000000        0x8 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+ .group         0x0000000000000000        0x8 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+ .group         0x0000000000000000        0x8 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+ .group         0x0000000000000000        0x8 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+ .group         0x0000000000000000        0x8 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+ .group         0x0000000000000000        0x8 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+ .group         0x0000000000000000        0x8 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+ .group         0x0000000000000000        0x8 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+ .text          0x0000000000000000        0x0 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+ .data          0x0000000000000000        0x0 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+ .bss           0x0000000000000000        0x0 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+ .text.SystemCoreClockUpdate
+                0x0000000000000000       0xac /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+ .data.SystemCoreClock
+                0x0000000000000000        0x4 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x0000000000000000       0x10 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x0000000000000000      0x12d /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x0000000000000000      0x5b2 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x0000000000000000       0x1c /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x0000000000000000       0x3a /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x0000000000000000       0x2d /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x0000000000000000      0xbb1 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x0000000000000000      0x2c7 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+ .text          0x0000000000000000        0x0 /Applications/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+ .data          0x0000000000000000        0x0 /Applications/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+ .bss           0x0000000000000000        0x0 /Applications/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+ .text          0x0000000000000000        0x0 /Applications/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/libcr_eabihelpers.a(division_64.o)
+ .data          0x0000000000000000        0x0 /Applications/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/libcr_eabihelpers.a(division_64.o)
+ .bss           0x0000000000000000        0x0 /Applications/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/libcr_eabihelpers.a(division_64.o)
+ .text.__aeabi_division_ldivmod
+                0x0000000000000000       0x26 /Applications/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/libcr_eabihelpers.a(division_64.o)
+ .text.__aeabi_division_uldivmod
+                0x0000000000000000      0x174 /Applications/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/libcr_eabihelpers.a(division_64.o)
+ .ARM.attributes
+                0x0000000000000000       0x21 /Applications/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/libcr_eabihelpers.a(division_64.o)
+ .text          0x0000000000000000        0x0 /Applications/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/libcr_eabihelpers.a(division_idiv0.o)
+ .data          0x0000000000000000        0x0 /Applications/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/libcr_eabihelpers.a(division_idiv0.o)
+ .bss           0x0000000000000000        0x0 /Applications/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/libcr_eabihelpers.a(division_idiv0.o)
+ .text.__aeabi_division_idiv0
+                0x0000000000000000        0x2 /Applications/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/libcr_eabihelpers.a(division_idiv0.o)
+ .ARM.attributes
+                0x0000000000000000       0x21 /Applications/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/libcr_eabihelpers.a(division_idiv0.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+MFlash512        0x0000000000000000 0x0000000000080000 xr
+RamLoc32         0x0000000010000000 0x0000000000008000 xrw
+RamAHB32         0x000000002007c000 0x0000000000008000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD ./src/cr_startup_lpc175x_6x.o
+LOAD ./src/crp.o
+LOAD ./src/labo7_led.o
+LOAD /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a
+START GROUP
+LOAD /Applications/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a
+LOAD /Applications/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/libcr_eabihelpers.a
+END GROUP
+                0x0000000000000000                __base_MFlash512 = 0x0
+                0x0000000000000000                __base_Flash = 0x0
+                0x0000000000080000                __top_MFlash512 = 0x80000
+                0x0000000000080000                __top_Flash = 0x80000
+                0x0000000010000000                __base_RamLoc32 = 0x10000000
+                0x0000000010000000                __base_RAM = 0x10000000
+                0x0000000010008000                __top_RamLoc32 = 0x10008000
+                0x0000000010008000                __top_RAM = 0x10008000
+                0x000000002007c000                __base_RamAHB32 = 0x2007c000
+                0x000000002007c000                __base_RAM2 = 0x2007c000
+                0x0000000020084000                __top_RamAHB32 = 0x20084000
+                0x0000000020084000                __top_RAM2 = 0x20084000
+
+.text           0x0000000000000000      0x530
+ FILL mask 0xff
+                0x0000000000000000                __vectors_start__ = ABSOLUTE (.)
+ *(.isr_vector)
+ .isr_vector    0x0000000000000000       0xcc ./src/cr_startup_lpc175x_6x.o
+                0x0000000000000000                g_pfnVectors
+                0x00000000000000cc                . = ALIGN (0x4)
+                0x00000000000000cc                __section_table_start = .
+                0x00000000000000cc                __data_section_table = .
+                0x00000000000000cc        0x4 LONG 0x530 LOADADDR (.data)
+                0x00000000000000d0        0x4 LONG 0x10000000 ADDR (.data)
+                0x00000000000000d4        0x4 LONG 0x0 SIZEOF (.data)
+                0x00000000000000d8        0x4 LONG 0x530 LOADADDR (.data_RAM2)
+                0x00000000000000dc        0x4 LONG 0x2007c000 ADDR (.data_RAM2)
+                0x00000000000000e0        0x4 LONG 0x0 SIZEOF (.data_RAM2)
+                0x00000000000000e4                __data_section_table_end = .
+                0x00000000000000e4                __bss_section_table = .
+                0x00000000000000e4        0x4 LONG 0x10000000 ADDR (.bss)
+                0x00000000000000e8        0x4 LONG 0x64 SIZEOF (.bss)
+                0x00000000000000ec        0x4 LONG 0x2007c000 ADDR (.bss_RAM2)
+                0x00000000000000f0        0x4 LONG 0x0 SIZEOF (.bss_RAM2)
+                0x00000000000000f4                __bss_section_table_end = .
+                0x00000000000000f4                __section_table_end = .
+ *(.after_vectors*)
+ .after_vectors
+                0x00000000000000f4      0x144 ./src/cr_startup_lpc175x_6x.o
+                0x00000000000000f4                data_init
+                0x0000000000000138                bss_init
+                0x0000000000000170                ResetISR
+                0x00000000000001e8                NMI_Handler
+                0x00000000000001f0                HardFault_Handler
+                0x00000000000001f8                MemManage_Handler
+                0x0000000000000200                BusFault_Handler
+                0x0000000000000208                UsageFault_Handler
+                0x0000000000000210                SVC_Handler
+                0x0000000000000218                DebugMon_Handler
+                0x0000000000000220                PendSV_Handler
+                0x0000000000000228                SysTick_Handler
+                0x0000000000000230                IntDefaultHandler
+                0x0000000000000230                PLL0_IRQHandler
+                0x0000000000000230                CAN_IRQHandler
+                0x0000000000000230                PLL1_IRQHandler
+                0x0000000000000230                SSP0_IRQHandler
+                0x0000000000000230                I2S_IRQHandler
+                0x0000000000000230                I2C2_IRQHandler
+                0x0000000000000230                RTC_IRQHandler
+                0x0000000000000230                TIMER0_IRQHandler
+                0x0000000000000230                SPI_IRQHandler
+                0x0000000000000230                EINT1_IRQHandler
+                0x0000000000000230                TIMER1_IRQHandler
+                0x0000000000000230                UART2_IRQHandler
+                0x0000000000000230                ADC_IRQHandler
+                0x0000000000000230                SSP1_IRQHandler
+                0x0000000000000230                USB_IRQHandler
+                0x0000000000000230                BOD_IRQHandler
+                0x0000000000000230                WDT_IRQHandler
+                0x0000000000000230                QEI_IRQHandler
+                0x0000000000000230                EINT0_IRQHandler
+                0x0000000000000230                DMA_IRQHandler
+                0x0000000000000230                UART3_IRQHandler
+                0x0000000000000230                MCPWM_IRQHandler
+                0x0000000000000230                TIMER2_IRQHandler
+                0x0000000000000230                ENET_IRQHandler
+                0x0000000000000230                RIT_IRQHandler
+                0x0000000000000230                I2C0_IRQHandler
+                0x0000000000000230                USBActivity_IRQHandler
+                0x0000000000000230                PWM1_IRQHandler
+                0x0000000000000230                I2C1_IRQHandler
+                0x0000000000000230                EINT2_IRQHandler
+                0x0000000000000230                UART1_IRQHandler
+                0x0000000000000230                EINT3_IRQHandler
+                0x0000000000000230                CANActivity_IRQHandler
+                0x0000000000000230                TIMER3_IRQHandler
+                0x0000000000000230                UART0_IRQHandler
+                0x00000000000002fc                . = 0x2fc
+ *fill*         0x0000000000000238       0xc4 ff
+                0x00000000000002fc                PROVIDE (__CRP_WORD_START__, .)
+ *(.crp)
+ .crp           0x00000000000002fc        0x4 ./src/crp.o
+                0x00000000000002fc                CRP_WORD
+                0x0000000000000300                PROVIDE (__CRP_WORD_END__, .)
+                0x0000000000000001                ASSERT (! ((__CRP_WORD_START__ == __CRP_WORD_END__)), Linker CRP Enabled, but no CRP_WORD provided within application)
+ *(.text*)
+ .text.ledSet   0x0000000000000300       0xac ./src/labo7_led.o
+                0x0000000000000300                ledSet
+ .text.buildRGB
+                0x00000000000003ac       0x90 ./src/labo7_led.o
+                0x00000000000003ac                buildRGB
+ .text.main     0x000000000000043c       0x10 ./src/labo7_led.o
+                0x000000000000043c                main
+ .text.SystemInit
+                0x000000000000044c       0xe0 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+                0x000000000000044c                SystemInit
+ .text.__weak_main
+                0x000000000000052c        0x4 /Applications/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+                0x000000000000052c                __main
+                0x000000000000052c                __weak_main
+ *(.rodata .rodata.* .constdata .constdata.*)
+                0x0000000000000530                . = ALIGN (0x4)
+
+.glue_7         0x0000000000000530        0x0
+ .glue_7        0x0000000000000530        0x0 linker stubs
+
+.glue_7t        0x0000000000000530        0x0
+ .glue_7t       0x0000000000000530        0x0 linker stubs
+
+.vfp11_veneer   0x0000000000000530        0x0
+ .vfp11_veneer  0x0000000000000530        0x0 linker stubs
+
+.v4_bx          0x0000000000000530        0x0
+ .v4_bx         0x0000000000000530        0x0 linker stubs
+
+.iplt           0x0000000000000530        0x0
+ .iplt          0x0000000000000530        0x0 ./src/cr_startup_lpc175x_6x.o
+
+.rel.dyn        0x0000000000000530        0x0
+ .rel.iplt      0x0000000000000530        0x0 ./src/cr_startup_lpc175x_6x.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x0000000000000530                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x0000000000000530                __exidx_end = .
+                0x0000000000000530                _etext = .
+
+.data_RAM2      0x000000002007c000        0x0 load address 0x0000000000000530
+ FILL mask 0xff
+                [!provide]                        PROVIDE (__start_data_RAM2, .)
+ *(.ramfunc.$RAM2)
+ *(.ramfunc.$RamAHB32)
+ *(.data.$RAM2*)
+ *(.data.$RamAHB32*)
+                0x000000002007c000                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__end_data_RAM2, .)
+
+.uninit_RESERVED
+                0x0000000010000000        0x0
+ *(.bss.$RESERVED*)
+                0x0000000010000000                . = ALIGN (0x4)
+                0x0000000010000000                _end_uninit_RESERVED = .
+
+.data           0x0000000010000000        0x0 load address 0x0000000000000530
+ FILL mask 0xff
+                0x0000000010000000                _data = .
+ *(vtable)
+ *(.ramfunc*)
+ *(.data*)
+                0x0000000010000000                . = ALIGN (0x4)
+                0x0000000010000000                _edata = .
+
+.igot.plt       0x0000000010000000        0x0 load address 0x0000000000000530
+ .igot.plt      0x0000000010000000        0x0 ./src/cr_startup_lpc175x_6x.o
+
+.bss_RAM2       0x000000002007c000        0x0
+                [!provide]                        PROVIDE (__start_bss_RAM2, .)
+ *(.bss.$RAM2*)
+ *(.bss.$RamAHB32*)
+                0x000000002007c000                . = ALIGN ((. != 0x0)?0x4:0x1)
+                [!provide]                        PROVIDE (__end_bss_RAM2, .)
+
+.bss            0x0000000010000000       0x64
+                0x0000000010000000                _bss = .
+ *(.bss*)
+ .bss.tabRGB    0x0000000010000000       0x61 ./src/labo7_led.o
+                0x0000000010000000                tabRGB
+ *(COMMON)
+                0x0000000010000064                . = ALIGN (0x4)
+ *fill*         0x0000000010000061        0x3 
+                0x0000000010000064                _ebss = .
+                [!provide]                        PROVIDE (end, .)
+
+.noinit_RAM2    0x000000002007c000        0x0
+ *(.noinit.$RAM2*)
+ *(.noinit.$RamAHB32*)
+                0x000000002007c000                . = ALIGN (0x4)
+
+.noinit         0x0000000010000064        0x0
+                0x0000000010000064                _noinit = .
+ *(.noinit*)
+                0x0000000010000064                . = ALIGN (0x4)
+                0x0000000010000064                _end_noinit = .
+                [!provide]                        PROVIDE (_pvHeapStart, DEFINED (__user_heap_base)?__user_heap_base:.)
+                0x0000000010008000                PROVIDE (_vStackTop, DEFINED (__user_stack_top)?__user_stack_top:(__top_RamLoc32 - 0x0))
+                0xffffffffefff74b2                PROVIDE (__valid_user_code_checksum, (0x0 - ((((((_vStackTop + (ResetISR + 0x1)) + (NMI_Handler + 0x1)) + (HardFault_Handler + 0x1)) + (DEFINED (MemManage_Handler)?MemManage_Handler:0x0 + 0x1)) + (DEFINED (BusFault_Handler)?BusFault_Handler:0x0 + 0x1)) + (DEFINED (UsageFault_Handler)?UsageFault_Handler:0x0 + 0x1))))
+OUTPUT(labo7_led.axf elf32-littlearm)
+
+.debug_info     0x0000000000000000      0xa89
+ .debug_info    0x0000000000000000      0x253 ./src/cr_startup_lpc175x_6x.o
+ .debug_info    0x0000000000000253       0x3f ./src/crp.o
+ .debug_info    0x0000000000000292      0x4df ./src/labo7_led.o
+ .debug_info    0x0000000000000771      0x318 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+
+.debug_abbrev   0x0000000000000000      0x35e
+ .debug_abbrev  0x0000000000000000       0xf5 ./src/cr_startup_lpc175x_6x.o
+ .debug_abbrev  0x00000000000000f5       0x36 ./src/crp.o
+ .debug_abbrev  0x000000000000012b      0x14d ./src/labo7_led.o
+ .debug_abbrev  0x0000000000000278       0xe6 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+
+.debug_aranges  0x0000000000000000       0xf0
+ .debug_aranges
+                0x0000000000000000       0x80 ./src/cr_startup_lpc175x_6x.o
+ .debug_aranges
+                0x0000000000000080       0x18 ./src/crp.o
+ .debug_aranges
+                0x0000000000000098       0x30 ./src/labo7_led.o
+ .debug_aranges
+                0x00000000000000c8       0x28 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+
+.debug_ranges   0x0000000000000000       0xa8
+ .debug_ranges  0x0000000000000000       0x70 ./src/cr_startup_lpc175x_6x.o
+ .debug_ranges  0x0000000000000070       0x20 ./src/labo7_led.o
+ .debug_ranges  0x0000000000000090       0x18 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+
+.debug_macro    0x0000000000000000     0x2c99
+ .debug_macro   0x0000000000000000       0x1d ./src/cr_startup_lpc175x_6x.o
+ .debug_macro   0x000000000000001d      0x88c ./src/cr_startup_lpc175x_6x.o
+ .debug_macro   0x00000000000008a9       0x1a ./src/crp.o
+ .debug_macro   0x00000000000008c3       0x34 ./src/crp.o
+ .debug_macro   0x00000000000008f7       0xa1 ./src/labo7_led.o
+ .debug_macro   0x0000000000000998       0x1c ./src/labo7_led.o
+ .debug_macro   0x00000000000009b4       0x3a ./src/labo7_led.o
+ .debug_macro   0x00000000000009ee       0x10 ./src/labo7_led.o
+ .debug_macro   0x00000000000009fe      0x12d ./src/labo7_led.o
+ .debug_macro   0x0000000000000b2b      0x5b2 ./src/labo7_led.o
+ .debug_macro   0x00000000000010dd       0x2d ./src/labo7_led.o
+ .debug_macro   0x000000000000110a      0xbb1 ./src/labo7_led.o
+ .debug_macro   0x0000000000001cbb      0x2c7 ./src/labo7_led.o
+ .debug_macro   0x0000000000001f82      0x2cc ./src/labo7_led.o
+ .debug_macro   0x000000000000224e       0x22 ./src/labo7_led.o
+ .debug_macro   0x0000000000002270       0x82 ./src/labo7_led.o
+ .debug_macro   0x00000000000022f2      0x12d /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x000000000000241f      0x87a /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+
+.debug_line     0x0000000000000000      0x623
+ .debug_line    0x0000000000000000       0xd5 ./src/cr_startup_lpc175x_6x.o
+ .debug_line    0x00000000000000d5       0x7f ./src/crp.o
+ .debug_line    0x0000000000000154      0x2d7 ./src/labo7_led.o
+ .debug_line    0x000000000000042b      0x1f8 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+
+.debug_str      0x0000000000000000     0xbc4d
+ .debug_str     0x0000000000000000     0x26c7 ./src/cr_startup_lpc175x_6x.o
+                                       0x26da (size before relaxing)
+ .debug_str     0x00000000000026c7       0xe9 ./src/crp.o
+                                       0x25f2 (size before relaxing)
+ .debug_str     0x00000000000027b0     0x8b8a ./src/labo7_led.o
+                                       0xb110 (size before relaxing)
+ .debug_str     0x000000000000b33a      0x913 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+                                       0x9944 (size before relaxing)
+
+.comment        0x0000000000000000      0x14c
+ .comment       0x0000000000000000       0x6e ./src/cr_startup_lpc175x_6x.o
+                                         0x6f (size before relaxing)
+ .comment       0x000000000000006e       0x6f ./src/crp.o
+ .comment       0x000000000000006e       0x6f ./src/labo7_led.o
+ .comment       0x000000000000006e       0x70 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+                                         0x71 (size before relaxing)
+ .comment       0x00000000000000de       0x6e /Applications/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+                                         0x6f (size before relaxing)
+
+.ARM.attributes
+                0x0000000000000000       0x31
+ .ARM.attributes
+                0x0000000000000000       0x33 ./src/cr_startup_lpc175x_6x.o
+ .ARM.attributes
+                0x0000000000000033       0x33 ./src/crp.o
+ .ARM.attributes
+                0x0000000000000066       0x33 ./src/labo7_led.o
+ .ARM.attributes
+                0x0000000000000099       0x33 /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+ .ARM.attributes
+                0x00000000000000cc       0x33 /Applications/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+
+.debug_frame    0x0000000000000000      0x224
+ .debug_frame   0x0000000000000000      0x170 ./src/cr_startup_lpc175x_6x.o
+ .debug_frame   0x0000000000000170       0x78 ./src/labo7_led.o
+ .debug_frame   0x00000000000001e8       0x3c /Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug/libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)

@@ -29,7 +29,7 @@ all: labo5_Interruptions_GPIO-TIMER.axf
 labo5_Interruptions_GPIO-TIMER.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
-	arm-none-eabi-gcc -nostdlib -L"Z:\PROC\workspace\MyLab_lib\Debug" -L"Z:\PROC\workspace\CMSIS_CORE_LPC17xx\Debug" -Xlinker -Map="labo5_Interruptions_GPIO-TIMER.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "labo5_Interruptions_GPIO-TIMER_Debug.ld" -o "labo5_Interruptions_GPIO-TIMER.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -nostdlib -L"/Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/MyLab_lib/Debug" -L"/Users/maximelovino/Google Drive/HEPIA/2016-2017/IT_231 - Processeurs/LABS/workspace/CMSIS_CORE_LPC17xx/Debug" -Xlinker -Map="labo5_Interruptions_GPIO-TIMER.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "labo5_Interruptions_GPIO-TIMER_Debug.ld" -o "labo5_Interruptions_GPIO-TIMER.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build

@@ -1,21 +1,6 @@
-14:42:13 **** Incremental Build of configuration Debug for project labo5_Interruptions_GPIO-TIMER ****
+13:16:58 **** Incremental Build of configuration Debug for project labo5_Interruptions_GPIO-TIMER ****
 make -r all 
-Building file: ../src/labo5_Interruption.c
-Invoking: MCU C Compiler
-arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -D__REDLIB__ -I"Z:\PROC\workspace\CMSIS_CORE_LPC17xx\inc" -I"Z:\PROC\workspace\MyLab_lib\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/labo5_Interruption.d" -MT"src/labo5_Interruption.o" -MT"src/labo5_Interruption.d" -o "src/labo5_Interruption.o" "../src/labo5_Interruption.c"
-Finished building: ../src/labo5_Interruption.c
- 
-Building target: labo5_Interruptions_GPIO-TIMER.axf
-Invoking: MCU Linker
-arm-none-eabi-gcc -nostdlib -L"Z:\PROC\workspace\MyLab_lib\Debug" -L"Z:\PROC\workspace\CMSIS_CORE_LPC17xx\Debug" -Xlinker -Map="labo5_Interruptions_GPIO-TIMER.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "labo5_Interruptions_GPIO-TIMER_Debug.ld" -o "labo5_Interruptions_GPIO-TIMER.axf"  ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/labo5_Interruption.o   -lMyLab_lib -lCMSIS_CORE_LPC17xx
-Finished building target: labo5_Interruptions_GPIO-TIMER.axf
- 
-make --no-print-directory post-build
-Performing post-build steps
-arm-none-eabi-size "labo5_Interruptions_GPIO-TIMER.axf"; # arm-none-eabi-objcopy -v -O binary "labo5_Interruptions_GPIO-TIMER.axf" "labo5_Interruptions_GPIO-TIMER.bin" ; # checksum -p LPC1769 -d "labo5_Interruptions_GPIO-TIMER.bin";
-   text	   data	    bss	    dec	    hex	filename
-   1928	     12	     12	   1952	    7a0	labo5_Interruptions_GPIO-TIMER.axf
- 
+make: Nothing to be done for `all'.
 
-14:42:14 Build Finished (took 578ms)
+13:16:58 Build Finished (took 79ms)
 
