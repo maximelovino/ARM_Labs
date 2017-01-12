@@ -65,9 +65,6 @@ void buildRGB(uint32_t r, uint32_t g,uint32_t b){
 		tabRGB[i+64] = ~((b & (1 << i)) >> i);
 	}
 
-	//code 1 1100
-	//code 0 1000
-	//invert all tab at the end
 }
 
 int main(void) {
